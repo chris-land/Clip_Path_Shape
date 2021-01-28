@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Protratto';
+  src: url(/fonts/Protratto-Regular.eot);
+  src: url(/fonts/Protratto-Regular.woff);
+  src: url(/fonts/Protratto-Regular.woff2);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;             
+}
+
+p {
+  font-family: Helvetica, sans-serif;
+  position: absolute;
+  top: 0;
+  font-size: 5vw;
+  width: 100vw;
+  height: 100vw;
+  font-family: 'Protratto';
+  line-height: 1.1;
+}
+
+.hidden {
+  background: #1d0066;
+  color: #6f798a;
+  height: 100vh;
+}
+
+.front {
+  background: #6f798a;
+  color: #1d0066;
+  clip-path: polygon(0 38%, 0 0, 100% 0, 100% 43%, 100% 100%, 0 100%, 0 55%);
+  transition: clip-path 1s;
+  padding:3vh;
+  text-align: center;
+  padding-top: 40vh;
+  font-size: 10vh;
+}
+
+.front:hover {
+  clip-path: polygon(0 38%, 17% 11%, 49% 34%, 100% 43%, 58% 66%, 24% 77%, 0 55%);
+}
